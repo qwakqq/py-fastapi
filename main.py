@@ -17,25 +17,25 @@ items_database = {
         'who in family': 'mom',
         'name': 'Tatiana',
         'age': 46,
-        'phone number': '+7(951)-627-44-13'
+        'phone number': ''
     },
     101: {
         'who in family': 'dad',
         'name': 'Sergey',
         'age': 52,
-        'phone number': '+7(902)-160-51-24'
+        'phone number': ''
     },
     102: {
         'who in family': 'daughter, sister',
         'name': 'Darya',
         'age': 20,
-        'phone number': '+7(950)-384-55-26'
+        'phone number': ''
     },
     103: {
         'who in family': 'son, brother',
         'name': 'Arsenii',
         'age': 13,
-        'phone number': '+7(902)-169-43-45' 
+        'phone number': '' 
     }
 }
 
@@ -71,4 +71,5 @@ def family_member(member_id: int):
             **items_database[member_id]
         }
     else:
+
         return {"error": "Member not found"}
